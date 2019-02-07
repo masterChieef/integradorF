@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,6 +8,8 @@ import { HomeComponent } from './Componentes/home/home.component';
 import { NavbarComponent } from './Componentes/navbar/navbar.component';
 import { LoginComponent } from './Componentes/login/login.component';
 import { RegisterComponent } from './Componentes/register/register.component';
+
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,9 @@ import { RegisterComponent } from './Componentes/register/register.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

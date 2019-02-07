@@ -6,13 +6,13 @@
         <form>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" class="form-control">
+            <input type="email" name="email" id="email" class="form-control" [(ngModel)]="email">
           </div>
           <div class="form-group">
-            <label for="password">Contraseña</label>
-            <input type="password" name="password" id="password" class="form-control">
+            <label for="pasword">Contraseña</label>
+            <input type="password" name="pasword" id="pasword" class="form-control" [(ngModel)]="password">
           </div>
-          <input type="submit" value="ENTRAR" class="btn btn-primary btn-block btn-lg">
+          <input type="submit" value="ENTRAR" class="btn btn-primary btn-block btn-lg" (click)="login()">
         </form>
       </div>
     </div>
