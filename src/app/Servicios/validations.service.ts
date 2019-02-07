@@ -9,8 +9,9 @@ export class ValidationsService {
 
   constructor(private http: Http) { }
 
-  login(email: String, password: String): Promise<any> {
-    const data = {email: email, password: password};
+  login(email: String, pasword: String): Promise<any> {
+    const data = {email: email, pasword: pasword};
+    JSON.stringify(console.log(data));
     return this.http.post(environment.api + 'login', JSON.stringify(data)).toPromise()
     .then( r =>
       r.json()

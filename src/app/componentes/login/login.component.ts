@@ -29,7 +29,6 @@ export class LoginComponent implements OnInit {
       this.esperando = true;
       this.busy = this.validationsDataServise.login(this.email, this.pasword).then( r => {
         this.esperando = false;
-        sessionStorage.setItem('api_token', r.token);
         sessionStorage.setItem('isLoggedin', 'true');
         const userData = { id: r.id, name: r.name };
         sessionStorage.setItem('user', JSON.stringify(userData));
