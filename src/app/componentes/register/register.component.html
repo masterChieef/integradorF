@@ -6,25 +6,29 @@
         <form>
           <div class="form-group">
             <label for="text">Nombre</label>
-            <input type="text" name="text" id="text" class="form-control">
+            <input type="text" name="text" id="text" class="form-control" [(ngModel)]="nombre">
           </div>
           <div class="form-group">
             <label for="text">Apellido</label>
-            <input type="text" name="apellido" id="apellido" class="form-control">
+            <input type="text" name="apellido" id="apellido" class="form-control" [(ngModel)]="apellido">
+          </div>
+          <div class="form-group">
+            <label for="text">Usuario</label>
+            <input type="text" name="usuario" id="usuario" class="form-control" [(ngModel)]="usuario">
           </div>
           <div class="form-group">
             <label for="text">Carrera</label>
-            <input type="text" name="carrera" id="carrera" class="form-control">
+            <input type="text" name="carrera" id="carrera" class="form-control" [(ngModel)]="carrera">
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" class="form-control">
+            <input type="email" name="email" id="email" class="form-control" [(ngModel)]="email">
           </div>
           <div class="form-group">
             <label for="password">Contraseña</label>
-            <input type="password" name="password" id="password" class="form-control">
+            <input type="password" name="password" id="password" class="form-control" [(ngModel)]="pasword">
           </div>
-          <input type="submit" value="CREAR CUENTA NUEVA" class="btn btn-success btn-block btn-lg">
+          <input type="submit" value="CREAR CUENTA NUEVA" class="btn btn-success btn-block btn-lg" (click)="users()">
         </form>
       </div>
     </div>
