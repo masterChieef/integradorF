@@ -11,6 +11,10 @@ export class ValidationsService {
 
   login(email: String, pasword: String): Promise<any> {
     const data = {email: email, pasword: pasword};
+<<<<<<< HEAD
+=======
+    JSON.stringify(console.log(data));
+>>>>>>> d0a6c263891299989148eac35ac2b02e56329c52
     return this.http.post(environment.api + 'login', JSON.stringify(data)).toPromise()
     .then( r =>
       r.json()
