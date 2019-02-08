@@ -1,0 +1,15 @@
+<div class="container">
+  <div *ngFor="let contacto of contactos" class="card col-3">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-3">
+          <img src="{{contacto.imagen}}" style="width: 50px;" />
+        </div>
+        <div class="col-9">
+          <h5 class="card-title">{{contacto.nombreContacto}}</h5>
+          <p class="card-text">{{contacto.estado}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+.imagen{
+    position: absolute;
+    left: 0px;
+    top: 15%;
+    left: 50px;
+}
+#comentario {
+    position: absolute;
+    left: 300px;
+    top: 15%;
+}
+#publicar{
+    position: absolute;
+    left: 300px;
+    top: 310px;
+    width: 700px;
+}
+#publicar .publicaciones{
+    width: auto;
+    height: auto;
+}

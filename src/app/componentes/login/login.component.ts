@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
         sessionStorage.setItem('isLoggedin', 'true');
         const userData = { id: r.id, name: r.name };
         sessionStorage.setItem('user', JSON.stringify(userData));
-        this.router.navigate(['/']);
+        this.router.navigate(['/privado']);
       }).catch( e => {
         this.esperando = false;
         swal({
@@ -47,5 +47,4 @@ export class LoginComponent implements OnInit {
       });
     }
   }
-
 }

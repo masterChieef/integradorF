@@ -37,8 +37,8 @@ export class RegisterComponent implements OnInit {
       this.busy = this.validationsDataServise.users(this.nombre, this.apellido, this.usuario, this.carrera, this.email, this.pasword).then( r => {
         this.esperando = false;
         swal({
-          title: 'Te damos la bienvenida',
-          text: 'Ahora podras ingresar',
+          title: 'Bienvenido',
+          text: 'Tu cuenta ah sido creada con exito',
           icon: 'success',
         })
         .then( response => {

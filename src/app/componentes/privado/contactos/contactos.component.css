@@ -1,0 +1,10 @@
+.contactos{
+    overflow: auto;
+    height: 500px;
+  }
+
+.container{
+  left: 75%;
+  position: absolute;
+}
+
